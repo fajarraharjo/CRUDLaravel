@@ -27,7 +27,8 @@
                                 <td>{{$data->judul}}</td>
                                 <td>{{$data->isi}}</td>
                                 <td>
-                                <a href="/tanya/{{$data->id}}">jawaban</a>
+                                <a href="/tanya/{{$data->id}}">jawaban</a> |
+                                <a href="/delete/{{$data->id}}">delete</a>
                                 </td>
                                 </tr>
                         @endforeach

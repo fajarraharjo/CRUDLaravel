@@ -57,6 +57,14 @@ class CrudController extends Controller
         $data->save();
         return redirect ('/jawaban');
     return response()->json($request);
-}
+    }
+
+    public function DeleteAnswer($id){
+        $data = $this->pertanyaan
+        ->where('id',$id);
+
+        $data->delete();
+        return redirect ('/pertanyaan');
+    }
 
 }

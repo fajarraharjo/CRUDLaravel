@@ -24,6 +24,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/pertanyaan', 'CrudController@ShowQuest');
 Route::get('/pertanyaan/create', 'CrudController@InsertQuest');
 Route::post('/create','CrudController@CreateQuest');
+Route::get('/delete/{id}','CrudController@DeleteAnswer');
 
 Route::get('/jawaban', 'CrudController@ShowAnswer');
 
