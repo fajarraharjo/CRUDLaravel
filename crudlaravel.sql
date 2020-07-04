@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 02, 2020 at 08:18 PM
+-- Generation Time: Jul 04, 2020 at 08:19 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.6
 
@@ -62,7 +62,8 @@ INSERT INTO `jawaban` (`id`, `pertanyaan_id`, `isi`, `created_at`, `updated_at`)
 (14, 4, 'javascript 1', '2020-07-02 11:03:17', '2020-07-02 11:03:17'),
 (15, 4, 'javascript 2', '2020-07-02 11:03:34', '2020-07-02 11:03:34'),
 (16, 5, 'boostrap 1', '2020-07-02 11:03:58', '2020-07-02 11:03:58'),
-(17, 4, 'javascript 4', '2020-07-02 11:09:04', '2020-07-02 11:09:04');
+(17, 4, 'javascript 4', '2020-07-02 11:09:04', '2020-07-02 11:09:04'),
+(18, 10, 'CSS', '2020-07-03 23:13:32', '2020-07-03 23:13:32');
 
 -- --------------------------------------------------------
 
@@ -121,7 +122,8 @@ INSERT INTO `pertanyaan` (`id`, `judul`, `isi`, `created_at`, `updated_at`) VALU
 (4, 'Ask Javascript', 'bagaimana cara mengimplementasikan javascript?', '2020-07-02 06:15:13', '2020-07-02 06:15:13'),
 (5, 'Ask Boostrap', 'bagaimana cara mengimplementasikan Boostrap?', '2020-07-02 06:15:38', '2020-07-02 06:15:38'),
 (6, 'Ask ERD', 'bagaimana cara membuat ERD?', '2020-07-02 06:16:02', '2020-07-02 06:16:02'),
-(7, 'Ask CRUD', 'bagaimana cara membuat CRUD?', '2020-07-02 06:17:21', '2020-07-02 06:17:21');
+(7, 'Ask CRUD', 'bagaimana cara membuat CRUD?', '2020-07-02 06:17:21', '2020-07-02 06:17:21'),
+(10, 'Ask CSS', 'bagaimana cara mengimplementasikan CSS?', '2020-07-03 23:13:17', '2020-07-03 23:13:17');
 
 -- --------------------------------------------------------
 
@@ -195,7 +197,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `jawaban`
 --
 ALTER TABLE `jawaban`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -207,7 +209,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `pertanyaan`
 --
 ALTER TABLE `pertanyaan`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `users`
